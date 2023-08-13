@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link stylesheet="rel"  href="style.css"/>
+  <style>
+.page-header.is-sticky {
+  position: fixed;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  backdrop-filter: blur(10px);
+  animation: slideDown 0.35s ease-out;
+}
+
+.page-header.is-sticky img {
+  max-width: 80%;
+}
+
+.page-header.is-sticky button {
+  font-size: 14px;
+  padding: 7px 10px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <section>
+    <div class="page-header">
+    <div class="New-Logo">
+        <div class="study-logo"><span>Logo</span></div>
+        <div class="study-logo">
+            <ul>
+                <li>
+                    <a href="#">Study Destionation</a>
+                    <a href="#">Explore Programs</a>
+                    <a href="#">insitution</a>
+                    <a href="#">Events</a>
+                    <a href="#">
+                        <select>
+                            <option>Our Services</option>
+                            <option>Services</option>
+                            <option>Our Controller</option>
+                            <option>Our Contionous</option>
+                        </select>
+                    </a>
+
+                    <a href="#">Blog</a>
+                    <a href="#">Log in</a>
+                </li>
+            </ul>
+        </div>
+        <div class="study-logo1">
+            <a href="#">BOOK FREE COUNSELING SESSSION</a>
+        </div>
+    </div>
+    </div>
+</section>
+<section>
+    <div class="glogal-educations">
+        <div class="global">
+            <h1>Global <span>Education</span> is our <span>mission</span>the world</h1>
+            <p>Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry.<br>Lorem Ipsum has
+            </p>
+            <p>been the industry's standard <br>text ever since </p>
+            <div class="search-here">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Searcch Programs" />
+                <p>
+                    <select>
+                        <i class='fas fa-map-marker-alt'></i>
+                        <option> Location</option>
+                    </select>
+                </p>
+                <button>Serach</button>
+            </div>
+        </div>
+        <div class="global2">
+            <img src="./img/h3.jpg" alt="prop" />
+            <!-- <img src="https://m.media-amazon.com/images/I/61pHjWdsyjL._SL1000_.jpg" alt="props"/> -->
+        </div>
+    </div>
+</section>
+  <script>
+    const header = document.querySelector(".page-header");
+const toggleClass = "is-sticky";
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 150) {
+    header.classList.add(toggleClass);
+  } else {
+    header.classList.remove(toggleClass);
+  }
+});
+
+  </script>
+</body>
+</html>
